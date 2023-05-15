@@ -13,3 +13,7 @@ class Homeworform(forms.ModelForm):
         fields=['subject','title','description','due','is_finished']
 class DashboardFom(forms.Form):
     text=forms.CharField(max_length=100,label="Enter Yor Search:") 
+class TodoForm(forms.ModelForm):
+    class Meta:
+        model=Todo
+        model=Todofields=['title','is_finished']    
